@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { defineComponent } from 'vue'
+  //import { defineComponent } from 'vue'
   import Header from './components/Header.vue'
   import HeroSection from './components/HeroSection.vue'
   import About from './components/About.vue'
