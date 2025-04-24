@@ -1,0 +1,41 @@
+/* styles.css */
+
+body {
+    background-color: #F4F4F4;
+    color: #232020;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .section-divider {
+    height: 3px;
+    background-color: #FF7315;
+    margin: 60px auto;
+    width: 80%;
+    border-radius: 3px;
+  }
+  
+  h1, h2, h3 {
+    color: #3A3535;
+  }
+  
+  a {
+    color: #FF7315;
+  }
+  
+  .btn-primary {
+    background-color: #FF7315;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3A3535;
+  }
+  
+  .section-divider {
+    height: 3px;
+    background-color: #FF7315; /* cor de destaque */
+    margin: 60px auto;
+    width: 80%;
+    border-radius: 3px;
+  }
+  
