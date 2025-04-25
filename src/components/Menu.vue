@@ -1,10 +1,10 @@
 <template>
-    <section id="menu" class="menu py-5 bg-white">
-        <div class="container">
-            <h2 class="text-center mb-4">Nosso Cardápio</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <section id="menu" class="menu py-5 bg-menu">
+        <div class="custom-container">
+            <h2 class="text-center text-white mb-4">Nosso Cardápio</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col" v-for="item in menuItems" :key="item.id">
-                <div class="card h-100">
+                <div class="menu-card h-100">
                 <img :src="item.image" class="card-img-top img-custom" :alt="item.name" />
                 <div class="card-body">
                     <h5 class="card-title">{{ item.name }}</h5>
@@ -99,22 +99,46 @@ export default {
 
 <style scoped>
     .img-custom {
-        height: 300px;
+        height: 250px;
         object-fit: cover;
         border-radius: 0.5rem;
         border-bottom: #3A3535 2px solid;
-        padding: 10px;
+        padding: 5px;
     }
 
-    .card{
-        padding: 10px;
-        border: 2px solid #FF7315
+    .bg-menu {
+        background-color: #232020;
     }
+
+    .custom-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .menu-card{
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 2px solid #FF7315;
+        border-radius: 0.5rem;
+        background-color: white;
+      }
 
     .card-text{
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         color: #3A3535;
         border-bottom: #3A3535 2px solid;
+    }
+
+    @media (max-width: 576px) {
+        .img-custom {
+            height: 200px;
+        }
+        .menu-card {
+            max-width: 90%;
+            font-size: 0.9rem;
+            padding: 0.75rem;
+        }
     }
 
 </style>
